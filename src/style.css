@@ -1,1 +1,93 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: green;
+}
+.container {
+  width: 330px;
+  height: 500px;
+}
+.card {
+  width: 330px;
+  height: 500px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+div.suit-hearts:before {
+  content: "♥";
+}
+div.suit-diamonds:before {
+  content: "♦";
+}
+div.suit-diamonds:before,
+div.suit-hearts:before {
+  font-size: 90px;
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  color: red;
+}
+
+div.suit-diamonds:after {
+  content: "♦";
+  position: absolute;
+}
+div.suit-hearts:after {
+  content: "♥";
+  position: absolute;
+}
+div.suit-diamonds:after,
+div.suit-hearts:after {
+  font-size: 90px;
+  position: absolute;
+  bottom: -20px;
+  right: 10px;
+  color: red;
+  transform: rotate(180deg);
+}
+div.suit-clubs:before {
+  content: "♣";
+  position: absolute;
+}
+div.suit-spades:before {
+  content: "♠";
+  position: absolute;
+}
+div.suit-clubs:before,
+div.suit-spades:before {
+  font-size: 90px;
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  color: black;
+}
+
+div.suit-spades:after,
+div.suit-clubs:after {
+  content: "♠";
+  font-size: 90px;
+  position: absolute;
+  bottom: -20px;
+  right: 10px;
+  color: black;
+  transform: rotate(180deg);
+}
+
+div.suit-clubs:after {
+  content: "♣";
+  position: absolute;
+}
+div.suit-spades:after {
+  content: "♠";
+}
